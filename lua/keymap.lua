@@ -10,3 +10,5 @@ map("n", "<leader>x", "<cmd>x<cr>")
 
 map("n", "j", [[v:count?'j':'gj']], { noremap = true, expr = true })
 map("n", "k", [[v:count?'k':'gk']], { noremap = true, expr = true })
+
+map("n", "<leader>nh", ":nohl<cr>")
