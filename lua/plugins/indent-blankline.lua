@@ -1,14 +1,14 @@
 return {
-  "lukas-reineke/indent-blankline.nvim",
-  main = "ibl",
-  event = "VeryLazy",
+  'lukas-reineke/indent-blankline.nvim',
+  main = 'ibl',
+  event = 'VeryLazy',
   opts = {
-    indent = { char = "┆" },
+    indent = { char = '┆' },
   },
 
   init = function()
     vim.opt.list = true
-    vim.opt.listchars:append "eol:↲"
-    vim.opt.listchars:append "trail:•"
+    vim.opt.listchars:append 'eol:↲'
+    vim.opt.listchars:append 'trail:•'
   end,
 }

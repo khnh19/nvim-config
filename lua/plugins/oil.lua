@@ -1,11 +1,11 @@
 return {
-  "stevearc/oil.nvim",
-  dependencies = "nvim-tree/nvim-web-devicons",
+  'stevearc/oil.nvim',
+  dependencies = 'nvim-tree/nvim-web-devicons',
   keys = {
     {
-      "<c-bslash>",
+      '<c-bslash>',
       function()
-        require("oil").toggle_float()
+        require('oil').toggle_float()
       end,
     },
   },

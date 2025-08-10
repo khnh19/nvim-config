@@ -1,5 +1,5 @@
 local opt = vim.opt
-opt.signcolumn = "yes"
+opt.signcolumn = 'yes'
 opt.number = true
 opt.relativenumber = true
 
@@ -9,8 +9,8 @@ opt.sidescrolloff = 5
 opt.hlsearch = true
 opt.incsearch = true
 
-opt.mouse:append "a"
-opt.clipboard:append "unnamedplus"
+opt.mouse:append 'a'
+opt.clipboard:append 'unnamedplus'
 
 opt.tabstop = 2
 opt.shiftwidth = 2
@@ -27,7 +27,7 @@ vim.bo.autoread = true
 opt.cursorline = true
 opt.termguicolors = true
 
-vim.api.nvim_create_autocmd("TextYankPost", {
+vim.api.nvim_create_autocmd('TextYankPost', {
   callback = function()
     vim.highlight.on_yank()
   end,
