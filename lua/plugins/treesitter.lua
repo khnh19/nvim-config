@@ -2,20 +2,13 @@ return {
   'nvim-treesitter/nvim-treesitter',
   event = { 'BufReadPre', 'BufNewFile' },
   build = ':TSUpdate',
-  dependencies = {
-    'windwp/nvim-ts-autotag',
-    'axelvc/template-string.nvim',
-  },
   config = function()
     require('nvim-treesitter.configs').setup {
       ensure_installed = {
-        'tsx',
         'lua',
         'vim',
         'rust',
         'python',
-        'typescript',
-        'javascript',
       },
 
       sync_install = false,
@@ -38,6 +31,5 @@ return {
         },
       },
     }
-    require('template-string').setup {}
   end,
 }
