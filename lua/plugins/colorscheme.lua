@@ -1,7 +1,7 @@
 return {
-  'datsfilipe/vesper.nvim',
+  'joshdick/onedark.vim',
   priority = 1000,
   config = function()
-    vim.cmd.colorscheme 'vesper'
+    vim.cmd.colorscheme 'onedark'
   end,
 }
